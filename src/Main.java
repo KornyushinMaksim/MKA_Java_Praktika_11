@@ -53,6 +53,7 @@ public class Main {
 //        из метода true, иначе false.
         Tasks str7 = new Tasks();
         Scanner in = new Scanner(System.in);
+        System.out.print("Введите число: ");
         String a = in.nextLine();
         System.out.print("tsk7:\t");
         System.out.println(str7.tsk7(a));
