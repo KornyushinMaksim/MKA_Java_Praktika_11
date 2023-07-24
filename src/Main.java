@@ -1,17 +1,19 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         //tsk1
-        Tasks str = new Tasks();
+        Tasks str1 = new Tasks();
         System.out.println("tsk1");
-        System.out.println(str.tsk1());
+        System.out.println(str1.tsk1());
 
         //tsk2
 //        Напишите метод, которыый принимает двачисла в качестве параметра и
 //        отображает все чётные числа между ними.
-        Tasks str1 = new Tasks();
+        Tasks str2 = new Tasks();
         System.out.println("tsk2");
-        System.out.println(str1.tsk2(1,20));
+        System.out.println(str2.tsk2(1,20));
 
         //tsk3
 //        напишите метод, который отображает горизонтальную или вертикальную линию из некоторого символа.
@@ -49,5 +51,10 @@ public class Main {
 //        шестизначное число «счастливым». Число передаётся
 //        в качестве параметра. Если число счастлмвое нужно вернуть
 //        из метода true, иначе false.
+        Tasks str7 = new Tasks();
+        Scanner in = new Scanner(System.in);
+        String a = in.nextLine();
+        System.out.print("tsk7:\t");
+        System.out.println(str7.tsk7(a));
     }
 }

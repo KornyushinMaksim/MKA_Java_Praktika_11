@@ -83,10 +83,14 @@ public class Tasks {
         String str = new String();
         String leftStr = strConsl.substring(0, strConsl.length() / 2);
         String rightStr = strConsl.substring(strConsl.length() / 2);
-        for (int i = 0; i < leftStr.length(); i++){
-            String sum += leftStr.charAt(i);
-        }
+        int leftSum = 0;
+        int rightSum = 0;
 
+        for (int i = 0; i < leftStr.length(); i++){
+            leftSum = Integer.parseInt(String.valueOf(leftStr.charAt(i)));
+            rightSum = Integer.parseInt(String.valueOf(rightStr.charAt(i)));
+        }
+        str += (leftSum == rightSum) ? "Счастливое" : "Несчастливое";
         return str;
     }
 }
